@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Memes</title>
+</head>
+<body>
+<img class="slideshowImage" src="FlatEarthMeme.jpg"></img>
+<img class="slideshowImage" src="minecraftmeme.jpg"></img>
+<img class="slideshowImage" src="download.png"></img>
+<!--i++ adds 1 to i-->
+<script type="text/javascript">
+
+var slideIndex=0;
+showSlides();
+
+function showSlides(){
+  var i;
+  var slides=document.getElementsByClassName("slideshowImage");
+  for(i=0; i<slides.length; i++){
+    slides[i].style.display="none";
+  }
+slides[slideIndex].style.display="block";
+slideIndex++;
+if(slideIndex>= slides.length){slideIndex=0};
+setTimeout(showSlides,10000);
+
+}
+
+</script>
+<!--10000 is 10 seconds-->
+</body>
+</html>
