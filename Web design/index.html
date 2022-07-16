@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+<!--This page has a paragraph and a table-->
+<head>
+  <title>Home</title>
+<link rel="stylesheet" href="Websitestyle.css">
+<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/e/ec/AoPS.png">
+</head>
+<body class="indexbody">
+<h1 class="indexhead">Homepage</h1>
+  <ul>
+    <div class="top">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Answer_Submissions.html">Answer submissions</a></li>
+    <li><a href="problems.html">Problems</a></li>
+    <li><a href="geometry.html">Geometry</a></li>
+    <li><a href="sources.html">Sources</a></li>
+</div>
+  </ul>
+    <div class="dropdown" style="float:right;">
+      <button class="dropbtn">Problem archives</button>
+      <div class="dropdown-content">
+        <a href="https://www.hmmt.co/archive/problems/">HMMT problems</a>
+        <a href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">AMC problems</a>
+        <a href="https://jason-shi-f9dm.squarespace.com/archives#directory">PUMaC problems</a>
+        <a href="http://internetolympiad.org/pages/15-omo_problems">OMO problems</a>
+      </div>
+    </div>
+<a class="image" href="https://www.hmmt.co"><img src="https://www.hmmt.co/static/img/logo.png" height="100px" width="auto"></a>
+<a class="image" href="https://www.maa.org"><img src="https://www.semagnet.org/wp-content/uploads/2018/11/MAA-American-Mathematics-Competitions.png" height="100px" width="auto"></a>
+<a class="image" href="https://jason-shi-f9dm.squarespace.com/"><img src="https://static1.squarespace.com/static/570450471d07c094a39efaed/t/599a4ded914e6bf5dab95bb8/1489872784674/PUMaC_logo_color.png" height="100px" width="auto"></a>
+
+<script type=text/javascript>
+var slideIndex = 0;
+showSlides();
+
+function showSlides(){
+  var i;
+  var slides = document.getElementsByClassName("image");
+  for(i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+  slideIndex++;
+  if(slideIndex >= slides.length){slideIndex = 0};
+  setTimeout(showSlides,5000)
+}
+
+</script>
+<div class="paragraph">
+<h2>Math competitions</h2>
+<p>
+  Standard school math curriculum is really boring.
+  You learn a formula, and apply it to problems <br>
+  over and over again.  However, math competitions
+  are different.  These competitions encourage different <br>
+  types of thinking.
+  Instead of using only formulas, these problems require creative solutions.  If you can't get <br>
+  many problems correct, don't be discouraged!  These problems are meant to be hard.
+</p>
+</div>
+<div class="table">
+<table align="center">
+  <thead>
+  <th colspan="6">Math Competitions</th>
+</thead>
+  <tr class="amc">
+    <td>American Math Competition (AMC) 8</td>
+    <td>AMC 10</td>
+    <td>AMC 12</td>
+    <td>AIME</td>
+    <td>USA(J)MO</td>
+    <td>IMO</td>
+  </tr>
+  <tr class="mathcounts">
+    <td>Mathcounts school round</td>
+    <td>Mathcounts chapter round</td>
+    <td>Mathcounts state round</td>
+    <td>Mathcounts nationals</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
